@@ -11,8 +11,6 @@
     
 #### Ссылка на документацию по API - [Punk API docs](https://punkapi.com/documentation/v2)
 
-#### Если вдруг что то будет не понятно следуйте меткам TODO
-
 #### P.S. Можете самостоятельно добавлять доп. слои, реализовать Presentation слой с помощью MVP, MVVM и использовать тот стэк технологий которым владеете на данный момент
 
 #### <a name="header_fork">[Статья с объяснением что такое Fork на Github](http://gearmobile.github.io/git/fork-github/)</a>
