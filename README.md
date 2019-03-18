@@ -1,7 +1,7 @@
 # Android 3 level GeekTech Base Architecture study project.
 ### Project themes: Basic architecture, Retrofit, Realm, Recycler.
 
-## Tasks:
+## Основные задачи:
    * Создать [Fork](#header_fork) репозитория у себя на аккаунте
    * Реализация запросов c использованием [Retrofit](#header_retrofit), желательно ко всем имеющимся методам 
    * Отображение списка пришедших данных в [Recycler-e](#header_recycler) (верстка и поля отображаемых данных по вашему усмотрению)
