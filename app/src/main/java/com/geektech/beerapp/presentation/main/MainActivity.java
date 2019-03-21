@@ -4,9 +4,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import com.geektech.beerapp.BeerApp;
 import com.geektech.beerapp.R;
 import com.geektech.util.Logger;
-import com.geektech.util.ToastUtil;
 
 public class MainActivity extends AppCompatActivity
     implements ILoginContract.View {
@@ -22,9 +22,7 @@ public class MainActivity extends AppCompatActivity
 
         mPresenter.attachView(this);
 
-        Logger.d("Asdasdasd");
-
-        Logger.d("Asdasdasd", "asdfsdf");
+        Logger.d("Beers amount " + BeerApp.beerRepository.getBeers().size());
 
         mPresenter.onLoginClick("Name", "Pass");
     }
