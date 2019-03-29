@@ -1,5 +1,6 @@
 package com.geektech.beerapp.presentation.beers;
 
+import com.geektech.beerapp.data.beers.IBeerDataSource;
 import com.geektech.beerapp.model.BeerEntity;
 
 import java.util.ArrayList;
@@ -7,6 +8,11 @@ import java.util.ArrayList;
 public class BeersPresenter implements IBeersContract.Presenter {
 
     IBeersContract.View view;
+
+
+    public BeersPresenter(IBeerDataSource beerDataSource) {
+        beerDataSource.getBeers();
+    }
 
     @Override
     public void onBeerClick(int position) {

@@ -20,6 +20,7 @@ public class BeerRepository implements IBeerDataSource {
 
     @Override
     public List<BeerEntity> getBeers() {
+        //TODO: Pass callback to RemoteDataSource
         return mLocal.loadBeers();
     }
 

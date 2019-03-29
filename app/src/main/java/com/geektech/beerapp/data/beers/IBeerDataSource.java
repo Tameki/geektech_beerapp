@@ -8,4 +8,10 @@ public interface IBeerDataSource {
     List<BeerEntity> getBeers();
 
     BeerEntity getBeer(int id);
+
+    interface BeersCallback{
+        void onSuccess(List<BeerEntity> beers);
+
+        void onFailure(String message);
+    }
 }

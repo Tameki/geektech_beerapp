@@ -1,13 +1,19 @@
 package com.geektech.beerapp.model;
 
+import com.google.gson.annotations.SerializedName;
+
 public class BeerEntity {
 
+    @SerializedName("id")
     private int id;
 
+    @SerializedName("name")
     private String name;
 
+    @SerializedName("description")
     private String description;
 
+    @SerializedName("image_url")
     private String imageUrl;
 
     //region Constructors
@@ -64,4 +70,9 @@ public class BeerEntity {
 
     //endregion
 
+
+    @Override
+    public String toString() {
+        return id + " " + name + " " + description + " " + imageUrl;
+    }
 }

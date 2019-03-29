@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.geektech.beerapp">
     
+    <uses-permission android:name="android.permission.INTERNET"/>
+    
     <application
         android:name=".BeerApp"
         android:allowBackup="true"
@@ -14,6 +16,8 @@
         tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".presentation.beers.BeersActivity"></activity>
         <activity android:name=".presentation.beerdetails.BeerDetailsActivity" />
+        
+        
         <activity android:name=".presentation.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
