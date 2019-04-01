@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import com.geektech.beerapp.R;
 import com.geektech.beerapp.model.BeerEntity;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class BeersFragment extends Fragment
     implements IBeersContract.View {
@@ -31,7 +31,7 @@ public class BeersFragment extends Fragment
     }
 
     @Override
-    public void showBeers(ArrayList<BeerEntity> beers) {
+    public void showBeers(List<BeerEntity> beers) {
 
     }
 

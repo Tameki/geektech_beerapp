@@ -17,7 +17,6 @@
         <activity android:name=".presentation.beers.BeersActivity"></activity>
         <activity android:name=".presentation.beerdetails.BeerDetailsActivity" />
         
-        
         <activity android:name=".presentation.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

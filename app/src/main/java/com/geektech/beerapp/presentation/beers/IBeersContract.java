@@ -3,11 +3,11 @@ package com.geektech.beerapp.presentation.beers;
 import com.geektech.beerapp.model.BeerEntity;
 import com.geektech.core.CoreMvpContract;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public interface IBeersContract {
     interface View extends CoreMvpContract.View<Presenter> {
-        void showBeers(ArrayList<BeerEntity> beers);
+        void showBeers(List<BeerEntity> beers);
 
         void openBeerDetails(int id);
     }

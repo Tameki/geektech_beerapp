@@ -4,14 +4,15 @@ import com.geektech.beerapp.data.beers.IBeerDataSource;
 import com.geektech.beerapp.model.BeerEntity;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class BeersPresenter implements IBeersContract.Presenter {
 
     IBeersContract.View view;
-
+    IBeerDataSource beerDataSource;
 
     public BeersPresenter(IBeerDataSource beerDataSource) {
-        beerDataSource.getBeers();
+
     }
 
     @Override
@@ -21,10 +22,17 @@ public class BeersPresenter implements IBeersContract.Presenter {
 
     @Override
     public void getBeers() {
-        ArrayList<BeerEntity> beers = new ArrayList<>();
-        beers.add(new BeerEntity());
+        beerDataSource.getBeers(new IBeerDataSource.BeersCallback() {
+            @Override
+            public void onSuccess(List<BeerEntity> beers) {
+                view.showBeers(beers);
+            }
 
-        view.showBeers(beers);
+            @Override
+            public void onFailure(String message) {
+
+            }
+        });
     }
 
     @Override

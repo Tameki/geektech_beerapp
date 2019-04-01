@@ -1,12 +1,15 @@
 package com.geektech.beerapp.data.beers;
 
+import android.support.annotation.Nullable;
+
 import com.geektech.beerapp.model.BeerEntity;
 
 import java.util.List;
 
 public interface IBeerDataSource {
-    List<BeerEntity> getBeers();
+    void getBeers(BeersCallback callback);
 
+    @Nullable
     BeerEntity getBeer(int id);
 
     interface BeersCallback{
